@@ -1,16 +1,16 @@
 import mysql.connector
 connection = mysql.connector.connect(
-    host="your_host",
-    port="your_port",
+    host="localhost",
+    port="3306",
     user="root",
     password="marty1234",
-    database="your_database"
+    database="pro"
 )
 cursor = connection.cursor()
-# Select all rows from a table
-#cursor.execute("SELECT * FROM your_table")
-#rows = cursor.fetchall()
-
+# # Select all rows from a table
+# cursor.execute("SELECT * FROM pro.admin")
+# rows = cursor.fetchall()
+#
 # for row in rows:
 #     print(row)
 # cursor.close()
