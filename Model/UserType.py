@@ -1,23 +1,19 @@
+
 from .database import db
 
+class UserRole(db.Model):
+    __tablename__ = 'user_type'
+    user_type_id = db.Column(db.Integer, primary_key=True)
+    role = db.Column(db.String(50))
 
-class Role(db.Model):
-    __tablename__ = 'role'
-    id = db.Column(db.Integer, primary_key=True, autoincrement=True)
-    name = db.Column(db.String(255), unique=True)
-
-
-
-
-    def __init__(self, name):
-        self.name = name
-
+    def __init__(self, role):
+        self.role = role
 
     @property
     def serialize(self):
         return {
             'id': self.id,
-            'name': self.name
+            'role':  self.role,
         }
 
     @staticmethod
