@@ -20,7 +20,7 @@ with open('C:/Users/ASUS TUF FA506/OneDrive/เดสก์ท็อป/project/
     car_issues_loaded = json.load(f)
 
 # Set up the OpenAI API key
-openai.api_key = "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"
+openai.api_key = "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"
 
 def remove_stopwords(text):
     tokens = word_tokenize(text, engine="newmm")
