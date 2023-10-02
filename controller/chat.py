@@ -29,13 +29,15 @@ repo.git.commit("-m", "Update from OpenAI API")
 # Push การเปลี่ยนแปลงไปยัง remote
 origin = repo.remote(name='origin')
 origin.push()
+import os
+API_KEY = os.environ.get('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')
 
 # Load the car issues dictionary from the JSON file
 with open('C:/Users/ASUS TUF FA506/OneDrive/เดสก์ท็อป/project/Senior_Project_Backend/controller/car_issues.json', 'r', encoding='utf-8') as f:
     car_issues_loaded = json.load(f)
 
 # Set up the OpenAI API key
-openai.api_key = "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"
+openai.api_key = API_KEY
 
 def remove_stopwords(text):
     tokens = word_tokenize(text, engine="newmm")
