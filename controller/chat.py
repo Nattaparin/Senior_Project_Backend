@@ -24,7 +24,7 @@ repo = git.Repo(repo_path)
 repo.git.add(update=True)
 
 # Commit การเปลี่ยนแปลง
-repo.git.commit("-m", "Update from OpenAI API")
+repo.git.commit("-m", "Update from OpenAI API2")
 
 # Push การเปลี่ยนแปลงไปยัง remote
 origin = repo.remote(name='origin')
