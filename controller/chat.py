@@ -15,7 +15,7 @@ import openai
 # DISTANCE_LAST = None  # ระยะทางล่าสุด
 # DISTANCE_NOW = None  # ระยะทางตอนนี้
 import os
-API_KEY = os.environ.get('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')
+API_KEY = os.environ.get('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')
 
 # Load the car issues dictionary from the JSON file
 with open('C:/Users/ASUS TUF FA506/OneDrive/เดสก์ท็อป/project/Senior_Project_Backend/controller/car_issues.json', 'r', encoding='utf-8') as f:
