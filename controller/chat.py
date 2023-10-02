@@ -14,21 +14,6 @@ import json
 import openai
 # DISTANCE_LAST = None  # ระยะทางล่าสุด
 # DISTANCE_NOW = None  # ระยะทางตอนนี้
-import git
-
-# กำหนด repository ที่ต้องการทำงาน
-repo_path = "C:/Users/ASUS TUF FA506/OneDrive/เดสก์ท็อป/project/Senior_Project_Backend"
-repo = git.Repo(repo_path)
-
-# เพิ่มไฟล์ที่มีการเปลี่ยนแปลง
-repo.git.add(update=True)
-
-# Commit การเปลี่ยนแปลง
-repo.git.commit("-m", "Update from OpenAI API2")
-
-# Push การเปลี่ยนแปลงไปยัง remote
-origin = repo.remote(name='origin')
-origin.push()
 import os
 API_KEY = os.environ.get('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')
 
